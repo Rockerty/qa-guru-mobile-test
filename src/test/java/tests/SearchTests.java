@@ -36,6 +36,6 @@ public class SearchTests extends TestBase {
 
         step("Verify article opened", () ->
                 $(id("org.wikipedia.alpha:id/view_page_title_text"))
-                        .shouldHave(text("Sigmund Freud")));
+                        .shouldHave(text("Appium")));
     }
 }
