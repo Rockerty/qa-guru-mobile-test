@@ -6,14 +6,12 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import javax.annotation.Nonnull;
-
 import static config.ConfigReader.browserstackConfig;
 
 public class BrowserstackDriver implements WebDriverProvider {
-    @Nonnull
+
     @Override
-    public WebDriver createDriver(@Nonnull Capabilities capabilities) {
+    public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities caps = new MutableCapabilities();
 
         caps.setCapability("browserstack.user", browserstackConfig.getUser());

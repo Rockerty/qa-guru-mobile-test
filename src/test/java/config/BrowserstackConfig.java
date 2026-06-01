@@ -7,7 +7,7 @@ import java.net.URL;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "classpath:config/${env}.properties"
+        "classpath:config/browserstack.properties"
 })
 public interface BrowserstackConfig extends Config {
 
